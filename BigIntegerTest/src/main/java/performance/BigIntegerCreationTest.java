@@ -29,9 +29,12 @@ import org.openjdk.jmh.annotations.*;
 
 import java.math.BigInteger;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.AverageTime)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
+
 public class BigIntegerCreationTest {
 
     private Random random;
