@@ -3,5 +3,5 @@ Built-By: brainless1
 Build-Jdk: 1.7.0_25
 Created-By: Apache Maven 3.1.1
 Archiver-Version: Plexus Archiver
-Premain-Class: size.ObjectSizeFetcher
-
+Main-Class: size.MeasureMain
+Class-Path: object-explorer.jar MemoryMeasurer.jar LongArithmetic.jar

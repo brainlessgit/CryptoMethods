@@ -1,0 +1,505 @@
+# Run progress: 0,00% complete, ETA 00:01:52
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerCreationTest.createFromString1024
+# Warmup Iteration   1: 30750,751 ns/op
+# Warmup Iteration   2: 29969,104 ns/op
+Iteration   1: 30250,906 ns/op
+Iteration   2: 29706,436 ns/op
+
+Run result: 29978,67 (<= 2 iterations)
+
+
+# Run progress: 3,57% complete, ETA 00:01:55
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerCreationTest.createFromString512
+# Warmup Iteration   1: 12121,228 ns/op
+# Warmup Iteration   2: 11995,915 ns/op
+Iteration   1: 11924,946 ns/op
+Iteration   2: 11887,525 ns/op
+
+Run result: 11906,24 (<= 2 iterations)
+
+
+# Run progress: 7,14% complete, ETA 00:01:50
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerCreationTest.createLongIntFromString1024
+# Warmup Iteration   1: 820,793 ns/op
+# Warmup Iteration   2: 800,963 ns/op
+Iteration   1: 795,326 ns/op
+Iteration   2: 793,004 ns/op
+
+Run result: 794,16 (<= 2 iterations)
+
+
+# Run progress: 10,71% complete, ETA 00:01:47
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerCreationTest.createProbablePrime1024
+# Warmup Iteration   1: 297913551,000 ns/op
+# Warmup Iteration   2: 610635573,500 ns/op
+Iteration   1: 402722215,500 ns/op
+Iteration   2: 684692915,500 ns/op
+
+Run result: 543707565,50 (<= 2 iterations)
+
+
+# Run progress: 14,29% complete, ETA 00:01:52
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerCreationTest.createProbablePrime2048
+# Warmup Iteration   1: 6834644864,000 ns/op
+# Warmup Iteration   2: 8229378433,000 ns/op
+Iteration   1: 6519539548,000 ns/op
+Iteration   2: 16435401774,000 ns/op
+
+Run result: 11477470661,00 (<= 2 iterations)
+
+
+# Run progress: 17,86% complete, ETA 00:04:22
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerCreationTest.createProbablePrime256
+# Warmup Iteration   1: 12896879,372 ns/op
+# Warmup Iteration   2: 13175676,579 ns/op
+Iteration   1: 12653571,873 ns/op
+Iteration   2: 13052087,818 ns/op
+
+Run result: 12852829,85 (<= 2 iterations)
+
+
+# Run progress: 21,43% complete, ETA 00:03:44
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerCreationTest.createProbablePrime512
+# Warmup Iteration   1: 67336465,000 ns/op
+# Warmup Iteration   2: 68246935,400 ns/op
+Iteration   1: 83533460,000 ns/op
+Iteration   2: 91062922,545 ns/op
+
+Run result: 87298191,27 (<= 2 iterations)
+
+
+# Run progress: 25,00% complete, ETA 00:03:16
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerCreationTest.dummy
+# Warmup Iteration   1: 0,809 ns/op
+# Warmup Iteration   2: 0,809 ns/op
+Iteration   1: 0,809 ns/op
+Iteration   2: 0,809 ns/op
+
+Run result: 0,81 (<= 2 iterations)
+
+
+# Run progress: 28,57% complete, ETA 00:02:54
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.add1024to1024
+# Warmup Iteration   1: 289,626 ns/op
+# Warmup Iteration   2: 287,017 ns/op
+Iteration   1: 284,911 ns/op
+Iteration   2: 285,401 ns/op
+
+Run result: 285,16 (<= 2 iterations)
+
+
+# Run progress: 32,14% complete, ETA 00:02:36
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.add2048to2048
+# Warmup Iteration   1: 527,135 ns/op
+# Warmup Iteration   2: 523,306 ns/op
+Iteration   1: 518,173 ns/op
+Iteration   2: 517,151 ns/op
+
+Run result: 517,66 (<= 2 iterations)
+
+
+# Run progress: 35,71% complete, ETA 00:02:20
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.add512to512
+# Warmup Iteration   1: 162,590 ns/op
+# Warmup Iteration   2: 161,547 ns/op
+Iteration   1: 158,886 ns/op
+Iteration   2: 160,042 ns/op
+
+Run result: 159,46 (<= 2 iterations)
+
+
+# Run progress: 39,29% complete, ETA 00:02:07
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.divide2048to1024
+# Warmup Iteration   1: 15196,565 ns/op
+# Warmup Iteration   2: 15051,328 ns/op
+Iteration   1: 14945,807 ns/op
+Iteration   2: 15011,250 ns/op
+
+Run result: 14978,53 (<= 2 iterations)
+
+
+# Run progress: 42,86% complete, ETA 00:01:55
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.divide2048to512
+# Warmup Iteration   1: 13289,971 ns/op
+# Warmup Iteration   2: 13071,391 ns/op
+Iteration   1: 13021,342 ns/op
+Iteration   2: 13044,386 ns/op
+
+Run result: 13032,86 (<= 2 iterations)
+
+
+# Run progress: 46,43% complete, ETA 00:01:44
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.multiply1024to1024
+# Warmup Iteration   1: 10296,912 ns/op
+# Warmup Iteration   2: 10159,307 ns/op
+Iteration   1: 10169,123 ns/op
+Iteration   2: 10186,820 ns/op
+
+Run result: 10177,97 (<= 2 iterations)
+
+
+# Run progress: 50,00% complete, ETA 00:01:35
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.multiply1024to2048
+# Warmup Iteration   1: 20364,110 ns/op
+# Warmup Iteration   2: 20165,312 ns/op
+Iteration   1: 20156,988 ns/op
+Iteration   2: 20190,432 ns/op
+
+Run result: 20173,71 (<= 2 iterations)
+
+
+# Run progress: 53,57% complete, ETA 00:01:26
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.multiply2048to1024
+# Warmup Iteration   1: 20586,599 ns/op
+# Warmup Iteration   2: 20348,216 ns/op
+Iteration   1: 20328,349 ns/op
+Iteration   2: 20296,628 ns/op
+
+Run result: 20312,49 (<= 2 iterations)
+
+
+# Run progress: 57,14% complete, ETA 00:01:17
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.multiply2048to2048
+# Warmup Iteration   1: 41008,040 ns/op
+# Warmup Iteration   2: 40497,143 ns/op
+Iteration   1: 40542,733 ns/op
+Iteration   2: 40460,723 ns/op
+
+Run result: 40501,73 (<= 2 iterations)
+
+
+# Run progress: 60,71% complete, ETA 00:01:09
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.BigIntegerOperationTest.multiply512to512
+# Warmup Iteration   1: 2617,312 ns/op
+# Warmup Iteration   2: 2596,354 ns/op
+Iteration   1: 2593,137 ns/op
+Iteration   2: 2590,070 ns/op
+
+Run result: 2591,60 (<= 2 iterations)
+
+
+# Run progress: 64,29% complete, ETA 00:01:02
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.add1024to1024
+# Warmup Iteration   1: 18701,567 ns/op
+# Warmup Iteration   2: 18175,945 ns/op
+Iteration   1: 18078,278 ns/op
+Iteration   2: 18015,559 ns/op
+
+Run result: 18046,92 (<= 2 iterations)
+
+
+# Run progress: 67,86% complete, ETA 00:00:55
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.add2048to2048
+# Warmup Iteration   1: 38915,160 ns/op
+# Warmup Iteration   2: 37688,994 ns/op
+Iteration   1: 37485,299 ns/op
+Iteration   2: 37457,535 ns/op
+
+Run result: 37471,42 (<= 2 iterations)
+
+
+# Run progress: 71,43% complete, ETA 00:00:48
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.add512to512
+# Warmup Iteration   1: 10588,817 ns/op
+# Warmup Iteration   2: 10387,153 ns/op
+Iteration   1: 10288,330 ns/op
+Iteration   2: 10291,276 ns/op
+
+Run result: 10289,80 (<= 2 iterations)
+
+
+# Run progress: 75,00% complete, ETA 00:00:41
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.divide2048to1024
+# Warmup Iteration   1: 117107936224,000 ns/op
+# Warmup Iteration   2: 114628164208,000 ns/op
+Iteration   1: 113696465496,000 ns/op
+Iteration   2: 114366354168,000 ns/op
+
+Run result: 114031409832,00 (<= 2 iterations)
+
+
+# Run progress: 78,57% complete, ETA 00:02:39
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.divide2048to512
+# Warmup Iteration   1: 341595917743,000 ns/op
+# Warmup Iteration   2: 333006231226,000 ns/op
+Iteration   1: 334793695455,000 ns/op
+Iteration   2: 332967068795,000 ns/op
+
+Run result: 333880382125,00 (<= 2 iterations)
+
+
+# Run progress: 82,14% complete, ETA 00:06:58
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.multiply1024to1024
+# Warmup Iteration   1: 52714179,158 ns/op
+# Warmup Iteration   2: 51197619,700 ns/op
+Iteration   1: 50749992,700 ns/op
+Iteration   2: 51280995,500 ns/op
+
+Run result: 51015494,10 (<= 2 iterations)
+
+
+# Run progress: 85,71% complete, ETA 00:05:21
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.multiply1024to2048
+# Warmup Iteration   1: 220548474,400 ns/op
+# Warmup Iteration   2: 215335492,400 ns/op
+Iteration   1: 214730391,400 ns/op
+Iteration   2: 215520881,400 ns/op
+
+Run result: 215125636,40 (<= 2 iterations)
+
+
+# Run progress: 89,29% complete, ETA 00:03:52
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.multiply2048to1024
+# Warmup Iteration   1: 89055211,833 ns/op
+# Warmup Iteration   2: 85694691,417 ns/op
+Iteration   1: 85590796,583 ns/op
+Iteration   2: 85727259,000 ns/op
+
+Run result: 85659027,79 (<= 2 iterations)
+
+
+# Run progress: 92,86% complete, ETA 00:02:29
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.multiply2048to2048
+# Warmup Iteration   1: 340110683,667 ns/op
+# Warmup Iteration   2: 331976919,250 ns/op
+Iteration   1: 329552410,000 ns/op
+Iteration   2: 330030456,250 ns/op
+
+Run result: 329791433,13 (<= 2 iterations)
+
+
+# Run progress: 96,43% complete, ETA 00:01:12
+# VM invoker: c:\Program Files (x86)\Java\jdk1.7.0_25\jre\bin\java.exe
+# VM options: <none>
+# Fork: 1 of 1
+# Warmup: 2 iterations, 1 s each
+# Measurement: 2 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: performance.LongIntOperationTest.multiply512to512
+# Warmup Iteration   1: 9347766,402 ns/op
+# Warmup Iteration   2: 9157685,164 ns/op
+Iteration   1: 9121574,664 ns/op
+Iteration   2: 9152490,264 ns/op
+
+Run result: 9137032,46 (<= 2 iterations)
+
+
+Benchmark                                                Mode   Samples         Mean   Mean error    Units
+p.BigIntegerCreationTest.createFromString1024            avgt         2    29978,671          NaN    ns/op
+p.BigIntegerCreationTest.createFromString512             avgt         2    11906,235          NaN    ns/op
+p.BigIntegerCreationTest.createLongIntFromString1024     avgt         2      794,165          NaN    ns/op
+p.BigIntegerCreationTest.createProbablePrime1024         avgt         2 543707565,500          NaN    ns/op
+p.BigIntegerCreationTest.createProbablePrime2048         avgt         2 11477470661,000          NaN    ns/op
+p.BigIntegerCreationTest.createProbablePrime256          avgt         2 12852829,846          NaN    ns/op
+p.BigIntegerCreationTest.createProbablePrime512          avgt         2 87298191,273          NaN    ns/op
+p.BigIntegerCreationTest.dummy                           avgt         2        0,809          NaN    ns/op
+p.BigIntegerOperationTest.add1024to1024                  avgt         2      285,156          NaN    ns/op
+p.BigIntegerOperationTest.add2048to2048                  avgt         2      517,662          NaN    ns/op
+p.BigIntegerOperationTest.add512to512                    avgt         2      159,464          NaN    ns/op
+p.BigIntegerOperationTest.divide2048to1024               avgt         2    14978,528          NaN    ns/op
+p.BigIntegerOperationTest.divide2048to512                avgt         2    13032,864          NaN    ns/op
+p.BigIntegerOperationTest.multiply1024to1024             avgt         2    10177,972          NaN    ns/op
+p.BigIntegerOperationTest.multiply1024to2048             avgt         2    20173,710          NaN    ns/op
+p.BigIntegerOperationTest.multiply2048to1024             avgt         2    20312,488          NaN    ns/op
+p.BigIntegerOperationTest.multiply2048to2048             avgt         2    40501,728          NaN    ns/op
+p.BigIntegerOperationTest.multiply512to512               avgt         2     2591,603          NaN    ns/op
+p.LongIntOperationTest.add1024to1024                     avgt         2    18046,919          NaN    ns/op
+p.LongIntOperationTest.add2048to2048                     avgt         2    37471,417          NaN    ns/op
+p.LongIntOperationTest.add512to512                       avgt         2    10289,803          NaN    ns/op
+p.LongIntOperationTest.divide2048to1024                  avgt         2 114031409832,000          NaN    ns/op
+p.LongIntOperationTest.divide2048to512                   avgt         2 333880382125,000          NaN    ns/op
+p.LongIntOperationTest.multiply1024to1024                avgt         2 51015494,100          NaN    ns/op
+p.LongIntOperationTest.multiply1024to2048                avgt         2 215125636,400          NaN    ns/op
+p.LongIntOperationTest.multiply2048to1024                avgt         2 85659027,792          NaN    ns/op
+p.LongIntOperationTest.multiply2048to2048                avgt         2 329791433,125          NaN    ns/op
+p.LongIntOperationTest.multiply512to512                  avgt         2  9137032,464          NaN    ns/op

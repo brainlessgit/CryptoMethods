@@ -25,6 +25,7 @@
 
 package performance;
 
+import entity.LongInt;
 import org.openjdk.jmh.annotations.*;
 
 import java.math.BigInteger;
@@ -60,6 +61,11 @@ public class BigIntegerCreationTest {
     }
 
     @GenerateMicroBenchmark
+    public LongInt createLongIntFromString1024() {
+        return new LongInt("153086497635506975744706405769477624856725887492519002365671065670656055035154319739030096670389363457404945835249977900023046235495679813017418480836799505286826505124589303563368695438788208927832697484822262641420268268952194205551265196087088802992781804484491097640191936255793115507918114776255801806075");
+    }
+
+    @GenerateMicroBenchmark
     public BigInteger createProbablePrime256() {
         return BigInteger.probablePrime(256, random);
     }
@@ -72,7 +78,6 @@ public class BigIntegerCreationTest {
     @GenerateMicroBenchmark
     public BigInteger createProbablePrime1024() {
         return BigInteger.probablePrime(1024, random);
-
     }
 
     @GenerateMicroBenchmark

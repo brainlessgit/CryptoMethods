@@ -27,6 +27,16 @@
             <version>4.10</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>thrd</groupId>
+            <artifactId>MemoryMeasurer</artifactId>
+            <version>0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>thrd</groupId>
+            <artifactId>LonhInt</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 
     <properties>
