@@ -82,4 +82,14 @@ public class BigIntegerOperationTest {
         return b2048.divide(a1024);
     }
 
+    @GenerateMicroBenchmark
+    public BigInteger pow2048to100() {
+        return a2048.pow(100);
+    }
+
+    @GenerateMicroBenchmark
+    public BigInteger pow2048to1024mod2048() {
+        return a2048.modPow(a1024, b2048);
+    }
+
 }

@@ -7,7 +7,7 @@
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Auto-generated JMH benchmark</name>
+    <name>BigInteger tests</name>
 
     <dependencies>
         <dependency>

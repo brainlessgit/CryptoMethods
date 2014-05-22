@@ -71,12 +71,12 @@ public class LongIntOperationTest {
         return a2048.mult(b2048);
     }
 
-    @GenerateMicroBenchmark
+   // @GenerateMicroBenchmark
     public LongInt divide2048to512() {
         return b2048.div(a512);
     }
 
-    @GenerateMicroBenchmark
+    //@GenerateMicroBenchmark
     public LongInt divide2048to1024() {
         return b2048.div(a1024);
     }
