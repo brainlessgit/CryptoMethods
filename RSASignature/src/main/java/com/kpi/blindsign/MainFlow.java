@@ -13,19 +13,18 @@ public class MainFlow {
         Bob bob = new Bob();
         Alice alice = new Alice(bob.getPub());
 
-        byte[] m = "Hel!asdkasdasdasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh   dasdkjshgkshdkfhsdkfjhskdjhfksdfh    o world!!!!".getBytes();
+        byte[] m = "   lkajsldkkksd walksdjlaks                                                laksjdlakjsdl                                             alskdjl akjsd                  orld!!!!".getBytes();
         byte[] signed = bob.straightForwardSign(m);
         boolean result = alice.straightForwardVerify(m, signed);
+
         System.out.println(result);
 
-//        byte[] masked = alice.mask(m);
-//        byte[] maskedSigned = bob.straightForwardSign(masked);
-//        byte[] unmaskedSigned = alice.unMask(masked);
+        byte[] masked = alice.mask(m);
+        byte[] maskedSigned = bob.straightForwardSign(masked);
+        byte[] unmaskedSigned = alice.unMask(maskedSigned);
 
-
-
-//        result = alice.straightForwardVerify(m, unmaskedSigned);
-//        System.out.println(result);
+        result = alice.straightForwardVerify(m, unmaskedSigned);
+        System.out.println(result);
 
 //        BigInteger a = new BigInteger("10000000001");
 //        System.out.println(a);

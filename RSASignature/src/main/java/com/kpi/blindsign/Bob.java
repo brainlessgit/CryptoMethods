@@ -46,11 +46,12 @@ public class Bob {
         int blocksDone = 0;
 
         for (int i = 0; i < toSign.length; i++) {
-            if ((i != 0 && i % blockSize == 0) || i == toSign.length - 1) {
-                block[i % blockSize] = toSign[i];
 
-                BigInteger a = new BigInteger(block);
+            if ((i != 0 && i % blockSize == 0) || i == toSign.length - 1) {
+                if (i == toSign.length - 1) block[i % blockSize] = toSign[i];
+                BigInteger a = new BigInteger(1, block);
                 BigInteger signedA = a.modPow(privateExponent, modulus);
+
                 byte[] src = signedA.toByteArray();
                 if (src.length > blockSize) {
                     int diff = src.length - blockSize;

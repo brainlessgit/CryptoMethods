@@ -4,7 +4,9 @@ import sun.security.rsa.RSAPublicKeyImpl;
 
 import java.math.BigInteger;
 import java.security.*;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 import static com.kpi.blindsign.Utils.modInv;
@@ -36,19 +38,27 @@ public class Alice {
 
         byte[] block = new byte[blockSize];
         byte[] result = new byte[countResultLength(toMask)];
+        int blocksDone = 0;
+
         for (int i = 0; i < toMask.length; i++) {
-            block[i % blockSize] = toMask[i];
             if ((i != 0 && i % blockSize == 0) || i == toMask.length - 1) {
-                try {
-                    BigInteger a = new BigInteger(block);
-                    BigInteger maskedA = a.multiply(kPow).mod(modulus);
-                    byte[] src = maskedA.toByteArray();
-                    System.arraycopy(src, 0, result, (i / blockSize) * blockSize + (blockSize - src.length), src.length);
-                    Arrays.fill(block, (byte) 0);
-                } catch (Exception e) {
-                    e.printStackTrace();
+                if (i == toMask.length - 1) block[i % blockSize] = toMask[i];
+
+                BigInteger a = new BigInteger(1, block);
+                BigInteger maskedA = a.multiply(kPow).mod(modulus);
+                byte[] src = maskedA.toByteArray();
+                if (src.length > blockSize) {
+                    int diff = src.length - blockSize;
+                    System.arraycopy(src, diff, result, blocksDone * blockSize, src.length - diff);
+
+                } else {
+                    System.arraycopy(src, 0, result, blocksDone * blockSize + (blockSize - src.length), src.length);
                 }
+                Arrays.fill(block, (byte) 0);
+
+                blocksDone++;
             }
+            block[i % blockSize] = toMask[i];
         }
         return result;
     }
@@ -59,19 +69,27 @@ public class Alice {
         } else {
             byte[] block = new byte[blockSize];
             byte[] result = new byte[countResultLength(toUnmask)];
+            int blocksDone = 0;
+
             for (int i = 0; i < toUnmask.length; i++) {
-                block[i % blockSize] = toUnmask[i];
                 if ((i != 0 && i % blockSize == 0) || i == toUnmask.length - 1) {
-                    try {
-                        BigInteger a = new BigInteger(block);
-                        BigInteger maskedA = a.multiply(kInv).mod(modulus);
-                        byte[] src = maskedA.toByteArray();
-                        System.arraycopy(src, 0, result, (i / blockSize) * blockSize + (blockSize - src.length), src.length);
-                        Arrays.fill(block, (byte) 0);
-                    } catch (Exception e) {
-                        e.printStackTrace();
+                    if (i == toUnmask.length - 1) block[i % blockSize] = toUnmask[i];
+
+                    BigInteger a = new BigInteger(1, block);
+                    BigInteger unmaskedA = a.multiply(kInv).mod(modulus);
+                    byte[] src = unmaskedA.toByteArray();
+                    if (src.length > blockSize) {
+                        int diff = src.length - blockSize;
+                        System.arraycopy(src, diff, result, blocksDone * blockSize, src.length - diff);
+
+                    } else {
+                        System.arraycopy(src, 0, result, blocksDone * blockSize + (blockSize - src.length), src.length);
                     }
+                    Arrays.fill(block, (byte) 0);
+
+                    blocksDone++;
                 }
+                block[i % blockSize] = toUnmask[i];
             }
             return result;
         }
@@ -85,15 +103,13 @@ public class Alice {
     public boolean straightForwardVerify(byte[] message, byte[] signature) {
         byte[] signatureBlock = new byte[blockSize];
         byte[] messageBlock = new byte[blockSize];
+
         for (int i = 0; i < signature.length; i++) {
             if ((i != 0 && i % blockSize == 0) || i == signature.length - 1) {
-
                 signatureBlock[blockSize - 1] = signature[i % blockSize == 0 ? i - 1 : i];
-                if (i < message.length) messageBlock[i % blockSize] = message[i];
-
                 BigInteger a = new BigInteger(1, signatureBlock);
                 BigInteger unsignedA = a.modPow(publicExponent, modulus);
-                BigInteger messageA = new BigInteger(messageBlock);
+                BigInteger messageA = new BigInteger(1, messageBlock);
                 Arrays.fill(signatureBlock, (byte) 0);
                 Arrays.fill(messageBlock, (byte) 0);
                 if (!messageA.equals(unsignedA)) return false;
