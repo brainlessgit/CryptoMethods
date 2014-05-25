@@ -25,7 +25,7 @@ public class Alice {
     private int blockSize;
 
     public Alice(PublicKey bobPublicKey) throws NoSuchAlgorithmException, InvalidKeyException {
-        rsa = Signature.getInstance("NONEwithRSA");
+        rsa = Signature.getInstance("SHA1withRSA");
         rsa.initVerify(bobPublicKey);
         modulus = ((RSAPublicKeyImpl) bobPublicKey).getModulus();
         publicExponent = ((RSAPublicKeyImpl) bobPublicKey).getPublicExponent();
@@ -63,7 +63,7 @@ public class Alice {
         return result;
     }
 
-    public byte[] unMask(byte[] toUnmask) throws NoSuchAlgorithmException {
+    public byte[] unMask(byte[] toUnmask) {
         if (kInv == null) {
             throw new IllegalArgumentException("How you mask the message?");
         } else {

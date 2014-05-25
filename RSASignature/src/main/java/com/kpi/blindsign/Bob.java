@@ -20,10 +20,10 @@ public class Bob {
     private final BigInteger privateExponent;
     private int blockSize;
 
-    public Bob() throws NoSuchAlgorithmException, InvalidKeyException {
+    public Bob(int modulusBitLength) throws NoSuchAlgorithmException, InvalidKeyException {
         KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
         SecureRandom random = SecureRandom.getInstance("SHA1PRNG");
-        keyGen.initialize(512, random);
+        keyGen.initialize(modulusBitLength, random);
         KeyPair pair = keyGen.generateKeyPair();
         priv = pair.getPrivate();
         pub = pair.getPublic();
@@ -31,7 +31,7 @@ public class Bob {
         privateExponent = ((RSAPrivateKey) priv).getPrivateExponent();
         blockSize = modulus.bitLength() / 8;
 
-        rsa = Signature.getInstance("NONEwithRSA");
+        rsa = Signature.getInstance("SHA1withRSA");
         rsa.initSign(priv);
     }
 
